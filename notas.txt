@@ -1,0 +1,14 @@
+modulos:
+    jsonwebtoken ---> jwt.io para info
+    sha1
+    uuid
+
+jwt: 
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.   --> cabecera (algoritmo y tipo de token)
+eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ. --> payload (data del usuario)
+SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c --> firma (hash entre header y payload, es dinamico)
+
+keys para encriptar y desencriptar el token: https://travistidwell.com/jsencrypt/demo/
+
+
+session(req.session) --> funciona como la clave de auth del usuario ---> no son escalables
